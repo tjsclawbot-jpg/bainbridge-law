@@ -3,36 +3,47 @@ import Link from 'next/link'
 export default function Services() {
   const services = [
     {
-      icon: '⚖️',
-      title: 'Criminal Defense',
-      description: 'Expert representation for clients facing criminal charges. We handle everything from misdemeanors to felonies.',
+      icon: '🏢',
+      title: 'Commercial Real Estate',
+      description: 'Complete legal services for commercial property transactions, from acquisition to closing.',
       details: [
-        'DUI/DWI defense',
-        'Drug offenses',
-        'White-collar crimes',
-        'Violent crime defense'
+        'Purchase and sale agreements',
+        'Due diligence and document review',
+        'Lease negotiations',
+        'Investment property transactions'
       ]
     },
     {
-      icon: '📋',
-      title: 'Civil Litigation',
-      description: 'Comprehensive representation in civil disputes and litigation matters.',
+      icon: '📑',
+      title: 'Title & Escrow Services',
+      description: 'Expert title examination, insurance, and escrow coordination for peace of mind.',
+      details: [
+        'Title searches and examination',
+        'Title insurance policies',
+        'Escrow account management',
+        'Closing coordination'
+      ]
+    },
+    {
+      icon: '🤝',
+      title: 'Deal Structuring & Negotiation',
+      description: 'Strategic guidance to structure deals effectively and navigate complex negotiations.',
+      details: [
+        'Entity formation and structuring',
+        'Contract negotiation',
+        'Terms and conditions optimization',
+        'Risk mitigation strategies'
+      ]
+    },
+    {
+      icon: '⚖️',
+      title: 'Commercial Litigation',
+      description: 'Representation in disputes related to commercial real estate and transactions.',
       details: [
         'Contract disputes',
-        'Personal injury',
-        'Business litigation',
-        'Employment law'
-      ]
-    },
-    {
-      icon: '👨‍👩‍👧‍👦',
-      title: 'Family Law',
-      description: 'Compassionate guidance through sensitive family matters.',
-      details: [
-        'Divorce & separation',
-        'Child custody',
-        'Adoption',
-        'Spousal support'
+        'Boundary and title disputes',
+        'Breach of contract claims',
+        'Settlement negotiations'
       ]
     }
   ]
@@ -48,16 +59,16 @@ export default function Services() {
             <h1 className="text-xl font-bold text-white">Bainbridge Law</h1>
           </div>
           <div className="flex gap-8">
-            <Link href="/" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/about" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               About
             </Link>
-            <Link href="/services" className="text-slate-300 hover:text-amber-400 transition-colors font-medium text-amber-400 border-b-2 border-amber-400">
+            <Link href="/services" className="text-slate-300 hover:text-amber-400 font-medium transition-colors text-amber-400 border-b-2 border-amber-400">
               Services
             </Link>
-            <Link href="/contact" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/contact" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               Contact
             </Link>
           </div>
@@ -66,9 +77,9 @@ export default function Services() {
 
       <div className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Legal Services</h2>
-        <p className="text-slate-600 text-lg mb-12">Specialized legal expertise across multiple practice areas</p>
+        <p className="text-slate-600 text-lg mb-12">Specialized expertise in commercial real estate and complex transactions</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {services.map((service, idx) => (
             <div key={idx} className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4">{service.icon}</div>
@@ -86,13 +97,13 @@ export default function Services() {
         </div>
 
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">Consultation Available</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">Let's Discuss Your Transaction</h3>
           <p className="text-slate-700 mb-6">
-            Not sure which service you need? Our experienced attorneys can assess your situation and recommend the best course of action. Contact us today to schedule a confidential consultation.
+            Whether you're buying, selling, or refinancing a commercial property, we have the expertise to guide you through every step. Our goal is to ensure smooth transactions and protect your interests throughout the process.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-6 py-2 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 transition-colors"
+            className="inline-block px-6 py-2 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors"
           >
             Schedule Consultation
           </Link>
@@ -100,7 +111,7 @@ export default function Services() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-slate-950 text-slate-300 py-8">
+      <footer className="bg-slate-950 text-slate-400 py-8 border-t border-amber-600/30">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>&copy; 2026 Bainbridge Law. All rights reserved.</p>
         </div>

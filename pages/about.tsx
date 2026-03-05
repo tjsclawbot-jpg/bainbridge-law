@@ -12,16 +12,16 @@ export default function About() {
             <h1 className="text-xl font-bold text-white">Bainbridge Law</h1>
           </div>
           <div className="flex gap-8">
-            <Link href="/" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-slate-300 hover:text-amber-400 transition-colors font-medium text-amber-400 border-b-2 border-amber-400">
+            <Link href="/about" className="text-slate-300 hover:text-amber-400 font-medium transition-colors text-amber-400 border-b-2 border-amber-400">
               About
             </Link>
-            <Link href="/services" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/services" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               Services
             </Link>
-            <Link href="/contact" className="text-slate-300 hover:text-amber-400 transition-colors font-medium">
+            <Link href="/contact" className="text-slate-300 hover:text-amber-400 font-medium transition-colors">
               Contact
             </Link>
           </div>
@@ -35,34 +35,34 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
             <p className="text-slate-700 leading-relaxed mb-4">
-              At Bainbridge Law, we are committed to providing exceptional legal representation and counsel to our clients. With years of experience in criminal defense, civil litigation, and family law, we understand the complexities of the legal system and are dedicated to protecting our clients' rights.
+              At Bainbridge Law, we specialize in commercial real estate transactions and provide comprehensive legal solutions for buyers, sellers, lenders, and their agents. We understand that commercial deals are complex, and our mission is to guide you through every step with clarity, transparency, and expert counsel.
             </p>
             <p className="text-slate-700 leading-relaxed">
-              We believe every client deserves personalized attention and a strategic approach to their legal matters.
+              We believe in attorney-led service, personalized attention, and a problem-solving approach that puts your interests first.
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Us</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">What Sets Us Apart</h3>
             <ul className="space-y-3">
               <li className="flex gap-3">
                 <span className="text-amber-600 font-bold">✓</span>
-                <span className="text-slate-700">Experienced legal team</span>
+                <span className="text-slate-700">Specialized commercial real estate expertise</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-600 font-bold">✓</span>
-                <span className="text-slate-700">Personalized client care</span>
+                <span className="text-slate-700">Transparent, clear communication</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-600 font-bold">✓</span>
-                <span className="text-slate-700">Strategic legal solutions</span>
+                <span className="text-slate-700">Attorney-led service on every transaction</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-600 font-bold">✓</span>
-                <span className="text-slate-700">Transparent communication</span>
+                <span className="text-slate-700">Problem-solving focus</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-600 font-bold">✓</span>
-                <span className="text-slate-700">Proven track record</span>
+                <span className="text-slate-700">Personalized, client-focused approach</span>
               </li>
             </ul>
           </div>
@@ -70,14 +70,24 @@ export default function About() {
 
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8 mb-8">
           <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Team</h3>
-          <p className="text-slate-700 mb-6">
-            Our team of dedicated legal professionals brings decades of combined experience to every case. We stay current with legal developments and employ cutting-edge strategies to achieve the best possible outcomes for our clients.
+          <p className="text-slate-700 mb-4">
+            Our team of experienced commercial real estate attorneys brings deep expertise in complex transactions, title work, escrow coordination, and deal structuring. We stay current with industry developments and employ proven strategies to achieve the best possible outcomes for our clients.
+          </p>
+          <p className="text-slate-700">
+            Whether you're navigating your first commercial acquisition or a complex multi-million dollar transaction, we're here to ensure your success.
+          </p>
+        </div>
+
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Commitment</h3>
+          <p className="text-slate-700">
+            We are committed to providing informed guidance, ensuring you're comfortable throughout the process, and giving you confidence when closing on your transaction. Your success is our success.
           </p>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-slate-950 text-slate-300 py-8">
+      <footer className="bg-slate-950 text-slate-400 py-8 border-t border-amber-600/30">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>&copy; 2026 Bainbridge Law. All rights reserved.</p>
         </div>
